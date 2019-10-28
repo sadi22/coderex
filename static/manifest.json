@@ -1,0 +1,16 @@
+  {
+    "short_name": "CodeRex",
+    "name": "CodeRex",
+    "icons": [
+      {
+        "src": "/static/icons/android-icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#00b4ff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#00b4ff"
+  }

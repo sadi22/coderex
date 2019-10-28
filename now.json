@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "name": "coderex-ssr",
+    "builds": [
+      {
+        "src": "next.config.js",
+        "use": "@now/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "^/service-worker.js$",
+        "dest": "/_next/static/service-worker.js",
+        "headers": {
+            "cache-control": "public, max-age=43200, immutable",
+            "Service-Worker-Allowed": "/"
+        }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      },
+      {
+        "src": "^/favicon-32x32.png$",
+        "dest": "/static/icons/favicon-32x32.png",
+        "headers": {
+          "cache-control": "public, max-age=43200, immutable"
+        }
+      },
+      
+      {
+        "src": "^/_next/static/(?:[^/]+/pages|chunks|runtime)/.+$",
+        "headers": { 
+          "cache-control": "public, max-age=43200, immutable"
+        }
+      }
+    ]
+  }
