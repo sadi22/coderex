@@ -20,7 +20,7 @@
     "jquery": "^3.4.1",
     "lru-cache": "^5.1.1",
     "moment": "^2.24.0",
-    "next": "9.0.8",
+    "next": "9.3.3",
     "next-offline": "^4.0.6",
     "next-page-transitions": "^1.0.0-beta.2",
     "next-transpile-modules": "^2.3.1",
